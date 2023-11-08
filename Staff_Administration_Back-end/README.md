@@ -31,3 +31,17 @@ Remember that you must enter the correct username and password according to your
 Once you finish setting the necessary parameters, modify the index.ts file as shown in the commit.
 
 When finished, build again and start with npm so that your backend makes the connection with your credentials.
+
+## Data management through endpoints
+
+To make the appropriate configuration and be able to manage the data directly from the DB, create a new folder to host the models.
+
+The models are basically the description of the tables that you contain in each of your databases, for the template check the path ` src/models/user.ts ` where you will find the users table, in it we must strictly place the imports of the connection to the database and the import of sequelize, in addition to placing inside the ` db.define('real_name_of_the_table') ` as well as the names of the columns of your table for the records.
+
+Another point to consider is the type of data and adding the cancellation of attributes such as ` createdAT:false, updateAT: false `, so that errors do not appear, or if you prefer, you can add those columns to your tables to avoid setting them to ( false).
+
+When you finish creating and modifying the previous changes, you must update the operations ` ( get, post, put, delete ) `, check the file structure in the path ` controllers/usuario.ts ` where you can see that the code has been modified to be able to obtain, modify, search, create and delete records.
+
+The use of ` try-catch ` is a good practice where we can handle certain possible errors that cause the app to crash.
+
+Upon completion of these changes, create new tests from Postman or in Thunder Client to effectively obtain the full functionality of these requests and responses.
