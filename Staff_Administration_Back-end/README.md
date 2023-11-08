@@ -16,4 +16,18 @@ With this preconfiguration we will be ready to connect to the database and begin
 ## Important 
 NOTE: if you want to test the routes and requests that have been created here, I recommend using PostMan, it is a software that allows you to test the routes to your endpoints, or if you prefer, install the Thunder client extension, it is a very useful extension to test the routes to your APIS like this case, and it is the one I currently use to check the configuration that I have shown you.
 
-## 
+## Connection to the database
+
+Create a new directory or folder at the same height as the previous ones, that is, inside the ` src/ ` folder, for this template we will use the name ` database/ ` and inside this new folder, create the following file ` dbconection .ts ` where we will create the instance to enter the credentials and make the connection to the database.
+
+To begin with the database connection configuration we will use ` sequelize `:
+
+    npm install --save sequelize
+
+now we can use this ORM inside our file
+
+Remember that you must enter the correct username and password according to your server where you host your database (mysql)
+
+Once you finish setting the necessary parameters, modify the index.ts file as shown in the commit.
+
+When finished, build again and start with npm so that your backend makes the connection with your credentials.
