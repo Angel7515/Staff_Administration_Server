@@ -15,3 +15,5 @@ With this preconfiguration we will be ready to connect to the database and begin
 
 ## Important 
 NOTE: if you want to test the routes and requests that have been created here, I recommend using PostMan, it is a software that allows you to test the routes to your endpoints, or if you prefer, install the Thunder client extension, it is a very useful extension to test the routes to your APIS like this case, and it is the one I currently use to check the configuration that I have shown you.
+
+## 

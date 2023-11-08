@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateUser = exports.postUser = exports.deleteUser = exports.getUser = exports.getUsers = void 0;
+// CRUD operations (preconfiguration)
 const getUsers = (req, res) => {
     res.json({
         msg: 'get users'
